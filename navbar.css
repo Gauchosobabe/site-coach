@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+.navbar{
+position: relative;
+top: 0;
+display: flex;
+width: 100vw;
+height: 110px;
+flex-direction: row;
+align-items: center;
+font-weight: bold;
+background: linear-gradient(45deg, oklab(60.2% 0.059 0.05), oklab(73% 0.058 0.073), oklab(88% 0.012 0.021), oklab(57.6% 0.121 0.062), oklab(37.8% 0.076 0.046));
+border-bottom: solid #000000;
+}
+.logo{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 20px;
+    left: 0;
+}
+.lien{
+    position: relative;
+    left: 50vw;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+}
+.menu{
+   position: absolute;
+   width: 35vw;
+   flex-direction: row;
+   text-align: right;
+   top: 80px;
+   right: 5vw; 
+}
+.compte{
+   list-style-type: none;
+   text-decoration: none;
+   position: absolute;
+   right: 5vw;
+   top: 0;
+   width: 304px;
+   height: 50px;
+   text-align: right;
+}
+.menu ul,
+.compte ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+    
+.compte li {
+  margin-bottom: 5px;
+}
+
+.lien a  {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.9s ease, text-decoration 0.99s ease;
+  display: inline-block;
+}
+.connexion{
+    position: relative;
+    top: 5px;
+    left: 0px;
+    width: 30px;
+}
+.facebook, .insta{
+    width: 20px;
+    position: relative;
+   
+}
+.compte a:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px oklab(65.079% 0.11646 0.05788);
+}
+.menu a:hover{
+    background-color: oklab(62.477000000000004% 0.11399 0.05724);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px oklab(65.079% 0.11646 0.05788);
+    border-radius: 30px;
+}
+a:hover {
+ 
+  transform: scale(1.2);
+
+}
+.facebook:hover,
+.insta:hover {
+  transform: scale(1.2); 
+  transition: transform 0.3s ease; 
+}
+.theme-switch input {
+    display: none;
+}
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc; 
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+    z-index: 2;
+}
+.slider .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    z-index: 1;
+}
+
+.slider .moon {
+    left: 7px; 
+    color: #F0E68C;
+}
+
+
+.slider .sun {
+    right: 7px; 
+    color: #FFA500;
+}
+
+.theme-switch input:checked + .slider {
+    background-color: #363942;
+}
+
+.theme-switch input:checked + .slider::before {
+    transform: translateX(30px);
+}
+.hamb{
+    display: none;
+}
+.footer{
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient(45deg, oklab(60.2% 0.059 0.05), oklab(73% 0.058 0.073), oklab(88% 0.012 0.021), oklab(57.6% 0.121 0.062), oklab(37.8% 0.076 0.046));
+    display: flex;
+    justify-content: center; 
+    align-items:start; 
+    gap: 50px; 
+    border-top: solid #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.menu2{
+    width: 15vw;
+}
+
+.menu2 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    gap: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.menu2 li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo2{
+    position: relative;
+    left: -10%;
+    top: 40%;
+    width: 500px;
+}
+.propos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    gap: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.reseau{
+    width: 100px;
+    height: 50px;
+}
+.reseau img{
+    width: 40px;
+}
+@media screen and (max-width: 1800px){
+
+ .menu {
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 770px) {
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+.logo {
+        position: static;
+        width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+   .lien {
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        align-items: center;
+        display: none;
+    }
+    .lien.active {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+
+    .compte {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        height: 70px;
+       
+    }
+
+    .menu li, .compte li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .hamb {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 2px 0px 5px black;
+}
+
+.hamb img {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+}
+.footer{
+    position: relative;
+    top: 50px;
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient(45deg, oklab(60.2% 0.059 0.05), oklab(73% 0.058 0.073), oklab(88% 0.012 0.021), oklab(57.6% 0.121 0.062), oklab(37.8% 0.076 0.046));
+    display: flex;
+    justify-content: center; 
+    align-items:start; 
+    gap: 50px; 
+    border-radius: 20px;
+}
+
+.menu2{
+    width: 15vw;
+    position: relative;
+    left: -35px;
+}
+
+.menu2 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.menu2 li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo2{
+    position: relative;
+    left: 0%;
+    top: 40%;
+    width: 500px;
+    margin: 0px;
+}
+.propos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    gap: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    width: 80px;
+}
+.reseau{
+    width: 60px;
+    height: 50px;
+}
+.reseau img{
+    width: 20px;
+}
+
+}

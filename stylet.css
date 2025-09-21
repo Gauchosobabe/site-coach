@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu .accueil{
+    display: none;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 800px;
+    left: 0vw;
+    top: 5px;
+}
+.coaching{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+.menuText{
+    position: absolute;
+    top: 10px;
+    color: aliceblue;
+    font-weight: bold;
+    left: 57%;
+    font-size: 20px;
+    top: 10%;
+    width: 40%;
+}
+.nutritionText{
+    position: absolute;
+    top: 10px;
+    color: aliceblue;
+    font-weight: bold;
+    left: 40%;
+    font-size: 20px;
+    top: 10%;
+    width: 40%;
+}
+.challengeText{
+    position: absolute;
+    top: 10px;
+    color: aliceblue;
+    font-weight: bold;
+    left: 5%;
+    font-size: 25px;
+    width: 40%;
+}
+#precedent,#suivant{
+    position: absolute;
+    top: 50%;
+    size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 70px;
+    height: 80px;
+    font-weight: 900;
+    opacity: 0.5;
+}
+#suivant{
+    right: 0px;
+}
+.container:hover{
+    opacity: 1;
+}
+#precedent:hover ,#suivant:hover{
+opacity: 1;
+}
+#decouvrir{
+    position: relative;
+    left: 35%;
+    width: 180px;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+#decouvrir:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);}
+.article {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 10px;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.info, .info2, .info3{
+    position: relative;
+    left: 10px;
+    height: 300px;
+    background-color: beige;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+.info h2 {
+background-color: beige;
+height: 20px;
+margin-bottom: 20px;
+max-width: 80%;
+}
+.info p {
+  width: 700px;
+  height: auto;
+  line-height: 1.4;
+  background-color: beige;
+  margin-left: 3px;
+  font-weight: bold;
+}
+p{
+    font-size: 16px;
+}
+.article .manue {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  float: left;
+  shape-outside: margin-box;
+  margin: 0 20px 5px 0px;
+}
+
+.info2, .info3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.info2 {
+    background-image: url(images/Transformation\ Corporelle\ Ultra-Large.png);
+}
+
+.info3 {
+    background-image: url(images/Suivi\ Coach\ Fitness\ Digital\ Paysage.png);
+}
+
+
+.info2::before, .info3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 20px;
+    z-index: 1;
+}
+
+
+.info2 h2, .info2 p, .info3 h2, .info3 p {
+    color: white;
+    font-weight: bold;
+    position: relative; 
+    z-index: 2;
+}
+
+/* Reste de votre CSS */
+.article h2 {
+   
+}
+.article p {
+    
+}
+p{
+   
+}
+
+.info2 p{
+    top: 20%;
+    width: 700px; 
+}
+.info3 h2 {
+    left: 25%;
+    /* ... */
+}
+.info3 p {
+    width: 700px; /
+}
