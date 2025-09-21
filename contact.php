@@ -46,7 +46,7 @@
 
 
     <div class="formulaire">
-        <h1>Contactez-moi</h1>
+        <h1>Contactez-moi !!!</h1>
 <form class="form" method="POST">
     <div class="gauche">
 
@@ -54,13 +54,13 @@
         <input type="text" name="nom" required placeholder="Votre nom"></div>
         <div class="Email"><label class="Email"></label>
         <input type="email" name="email" required required placeholder="Votre email"></div>
-        <label class="Sujet"></label>
+        <div  class="Sujet"><label></label>
         <select class="sujet" type="sujet" name="sujet" required required placeholder="L'objet de votre demande">
             <option value="FORME" id="FORME">REMISE EN FORME</option>
             <option value="POIDS" id="POIDS">PERTE DE POIDS</option>
             <option value="NUTRITION" id="NUTRITION">NUTRITION</option>
             <option value="MASSE" id="MASSE">PRISE DE MASSE</option>
-           </select>
+           </select></div>
         
      </div>
      <div class="droite">
@@ -96,6 +96,26 @@ if (isset($_POST["message"])and filter_var($_POST['email'], FILTER_VALIDATE_EMAI
 
 
 ?>
+<div class="footer">
+    <div class="logo2">
+        <img src="images/logo-transparent-svg.svg" alt="">
+    </div>
+    <div class="menu2">
+        <ul>
+            COACHING
+            <li><a href="">PROGRAMMES</a></li>
+            <li><a href="">NUTRITION</a></li>
+            <li><a href="">RESULTATS</a></li>
+            <li><a href="">CHALLENGES</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+   <div class="propos"> A PROPOS
+    <div class="reseau">
+        <a href="https://www.facebook.com/emmanuelle64.pfeiffer"><img src="images/facebook.png" alt="" class="facebook"></a>
+        <a href="https://www.instagram.com/manouschka_/"><img src="images/sociale.png" alt="" class="insta"></a>
+    </div></div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
