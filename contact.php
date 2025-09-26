@@ -19,7 +19,7 @@
         <div class="lien">
         <div class="compte">
             <ul>
-            <li><a href=""><img src="images/connexion.png" class="connexion" alt="">SE CONNECTER/ S'INSCRIRE</li></a>
+            <li><a href="connexion.php"><img src="images/connexion.png" class="connexion" alt="">SE CONNECTER/ S'INSCRIRE</li></a>
             <li><a href="https://www.facebook.com/emmanuelle64.pfeiffer"><img src="images/facebook.png" alt="" class="facebook"></a>
             <a href="https://www.instagram.com/manouschka_/"><img src="images/sociale.png" alt="" class="insta"></a>
             <label class="theme-switch">
@@ -116,6 +116,6 @@ if (isset($_POST["message"])and filter_var($_POST['email'], FILTER_VALIDATE_EMAI
         <a href="https://www.instagram.com/manouschka_/"><img src="images/sociale.png" alt="" class="insta"></a>
     </div></div>
 </div>
-<script src="script.js"></script>
+<script src="avant.js"></script>
 </body>
 </html>

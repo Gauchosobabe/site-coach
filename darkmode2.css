@@ -9,7 +9,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url(images/fondsport.jpg);
+    background-image: url(images/contactblack.jpg);
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 input, select, textarea{
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid aliceblue;
+    border-bottom: 2px solid black;
     height: 20px;
     color: aliceblue;
     font-size: 18px;
@@ -38,7 +38,7 @@ width: 500px;
 height: 600px;
 background: transparent;
 backdrop-filter: blur(10px);
-border: solid rgba(255, 255, 255, 0.685) 2px;
+border: solid black 2px;
 border-radius: 20px;
 }
 .gauche{
@@ -63,7 +63,7 @@ border-radius: 20px;
     margin: 0 auto;
     width: 175px;
     display: block;
-    border: solid rgba(255, 255, 255, 0.685);
+    border: solid black;
     border-radius: 20px;
     height: 30px;
 }

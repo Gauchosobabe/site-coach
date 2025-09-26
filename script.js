@@ -229,3 +229,20 @@ document.addEventListener('DOMContentLoaded', () => {
         menuContainer.classList.toggle('active');
     });
 });
+const article = document.querySelectorAll('.article');
+const result = document.querySelectorAll('.résultats');
+const container = document.querySelectorAll('.container');
+const decouvrir = document.getElementById('decouvrir');
+
+
+window.addEventListener('DOMContentLoaded', () => { 
+    const TL = gsap.timeline({ paused: true });
+
+    TL.from(container, { duration: 1, y: -50, opacity: 0, ease: "power2.out", stagger: 0.3 });
+    TL.from(decouvrir, { duration: 1, x: 50, opacity: 0, ease: "power2.out" }, '-=1');
+    TL.from(article, { duration: 1, y: -50, opacity: 0, ease: "power2.out", stagger: 0.3 }, '-=1');
+    TL.from(result, { duration: 1, y: -50, opacity: 0, ease: "power2.out", stagger: 0.3 }, '-=1');
+
+    TL.play();
+});
+

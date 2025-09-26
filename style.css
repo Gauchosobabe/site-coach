@@ -415,11 +415,6 @@ textarea:focus {
     display: none;
 }
 
-.formulaire{
-position: relative;
-width: 600px;
-height: 1000px;
-}
 @media screen and (max-width: 1889px){
     .info, .info2, .info3 {
         width: 90%;
